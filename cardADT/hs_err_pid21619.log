@@ -1,0 +1,33 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f45ac24d101, pid=21619, tid=14355
+#
+# JRE version: OpenJDK Runtime Environment Corretto-11.0.13.8.1 (11.0.13+8) (build 11.0.13+8-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Corretto-11.0.13.8.1 (11.0.13+8-LTS, mixed mode, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# C  [libjimage.so+0x4101]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport %p %s %c %d %P %E" (or dumping to /home/anon/Documents/COSC1P03_assns/Assn_1/cardADT/core.21619)
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-11/issues/
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:/snap/intellij-idea-community/345/lib/idea_rt.jar=33115:/snap/intellij-idea-community/345/bin -Dfile.encoding=UTF-8 BlackJack.Play_BlackJack
+
+Host: Intel(R) Core(TM) i5-6200U CPU @ 2.30GHz, 4 cores, 7G, Ubuntu 18.04.6 LTS
+Time: Tue Mar  8 18:33:04 2022 EST elapsed time: 10069.912148 seconds (0d 2h 47m 49s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f452c02b800):  JavaThread "XToolkt-Shutdown-Thread" [_thread_in_vm, id=14355, stack(0x00007f451fafb000,0x00007f451fbfc000)]
+
+Stack: [0x00007f451fafb000,0x00007f451fbfc000],  sp=0x00007f451fbf9060,  free space=1016k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libjimage.so+0x4101]  ImageStrings::find(Endian*, char const*, int*, unsigned int)+0x71
+C  [libjimage.so+0x4cfa]  ImageFileReader::find_location_index(char const*, unsigned long long*) const+0x3a
+C  [libjimage.so+0x51fa]  JIMAGE_FindResource+0xfa
+V  [libjvm.so+0x60bb0e]

@@ -1,0 +1,13 @@
+Welcome to BlackJack.
+
+
+
+To play, download the 'brockPackages'.
+Player must have Java 8 or newer. 
+
+Note that this is a simplified version of the popular casino game,
+and players will not be betting tokens of any kind, nor are they able to
+"split". It is assumed players already know how to play BlackJack.
+
+Proper testing has not yet been written but is coming soon.
+
